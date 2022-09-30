@@ -64,12 +64,31 @@ a:hover {
 .content {
     width: 35em;
     height: 24em;
-    margin: 3em;
+    margin: 2em;
+    margin-left: -1em;
     padding: 2em;
     background-color: rgba(255, 253, 253, 0.843);
     border-radius: 1.5em;
+    overflow: scroll;
   }
 
 .Aidan-photo {
     height:30em;
+}
+
+@media screen and (max-width: 400px) and (max-height: 700px){
+    .container{
+        display: flex; 
+        gap: 1em;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1080px) and (max-width: 1900px){
+    .container {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        padding: 1em
+    }
 }
