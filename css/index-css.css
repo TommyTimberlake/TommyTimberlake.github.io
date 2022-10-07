@@ -37,6 +37,8 @@ h5 {
     font-weight: 250;
     font-size: 24px;
     border-top: 2px solid black;
+    padding: .4em;
+    padding-top: 1em;
 }
 
 h6 {
@@ -53,11 +55,6 @@ p {
     font-size: 16px;
 }
 
-a:link {
-    color: black;
-  }
-
-a:hover {
 .pronouns {
     font-family: 'Roboto Slab';
     font-style: normal;
