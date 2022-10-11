@@ -1,8 +1,7 @@
-let body = document.querySelector('hamburger');
-hamburger.addEventListener('click', giveAlert);
+document.getElementById("headerA").addEventListener("click", giveAlert);
 
 function giveAlert() {
-    alert('MM... Delicious');
+   alert('MM... Let\'s Eat!');
 }
 
 const buttonToBeClicked = document.getElementById("example-button");
@@ -13,7 +12,7 @@ const resetButton = document.getElementById("reset-button");
 const initialText = buttonToBeClicked.textContent;
 
 // the text that the button contains after being clicked
-const clickedText = "Order Submitted";
+const clickedText = "Order Submitted!";
 
 // we hoist the event listener callback function
 // to prevent having duplicate listeners attached
