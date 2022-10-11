@@ -12,8 +12,6 @@ const resetButton = document.getElementById("reset-button");
 // the text that the button is initialized with
 const initialText = buttonToBeClicked.textContent;
 
-const initialText = "Submit Order";
-
 // the text that the button contains after being clicked
 const clickedText = "Order Submitted";
 
