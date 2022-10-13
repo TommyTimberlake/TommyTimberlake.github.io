@@ -5,11 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Silly story generator</title>
-    <link rel="stylesheet" href="ica-css.css">
+    <!--<link rel="stylesheet" href="index-css.css">-->
 
     <style>
 
-        body {
+        html {
+            background-color: rgb(184, 182, 182);
+        }
+        
+        h1 {
+        font-family: 'Industry Inc';
+        font-style: normal;
+        font-size: 77px;
+        border-bottom: 5px solid #004DC1;
+        }
+
+h2 {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    /*margin-top: -1em;*/
+}
+
+.region {
+    font-family: 'Lato';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.entername {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+
+.generate {
+    font-family: 'Roboto Mono';
+    font-weight: 400;
+    font-size: 19px;
+    margin: 1px;
+    width: 350px;
+}
+
+p {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+        .nothead {
           font-family: helvetica, sans-serif;
           width: 350px;
         }
@@ -28,8 +76,8 @@
         }
     
         p {
-          background: #FFC125;
-          color: #5E2612;
+          background: #ffe7cc;
+          color: #146bd0;
           padding: 10px;
           visibility: hidden;
         }
@@ -41,19 +89,21 @@
 </head>
 <body>
     <h1> Aidan Young-Sgoutas </h1>
-    <div>
-        <label for="customname">Enter custom name:</label>
-        <input id="customname" type="text" placeholder="">
-      </div>
-      <div>
-        <label for="us">US</label><input id="us" type="radio" name="ukus" value="us" checked>
-        <label for="uk">UK</label><input id="uk" type="radio" name="ukus" value="uk">
-      </div>
-      <div>
-        <button class="randomize">Generate random story</button>
-      </div>
+    <div class="nothead">
+        <div class="entername">
+            <label for="customname">Enter custom name:</label>
+            <input id="customname" type="text" placeholder="">
+        </div>
+        <div class="region">
+            <label for="us">US</label><input id="us" type="radio" name="ukus" value="us" checked>
+            <label for="uk">UK</label><input id="uk" type="radio" name="ukus" value="uk">
+        </div>
+        <div class="generate">
+            <button class="randomize">Generate random story</button>
+        </div>
       <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
-      <p class="story"></p>
+        <p class="story"></p>
+    </div>
 
 </body>
 </html>
