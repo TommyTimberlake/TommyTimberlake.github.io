@@ -1,3 +1,5 @@
+
+
 function submit() {
     alert('Your phone number is ' + output.textContent);
 }
@@ -79,6 +81,7 @@ const output = document.querySelector('.output');
 let outputInt = parseInt(output.textContent);
 console.log(outputInt);
 
+const initializeButton = document.querySelector('.initialize-button').addEventListener('click', reset);
 const resetButton = document.querySelector('.reset-button').addEventListener('click', reset);
 const submitButton = document.querySelector('.submit-button').addEventListener('click', submit);
 const zeroButton = document.querySelector('.zero-button').addEventListener('click', numberZero);
