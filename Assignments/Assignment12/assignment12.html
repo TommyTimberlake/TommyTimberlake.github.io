@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Bad Phone Number</title>
+    <link rel="stylesheet" href="/Assignments/Assignment12/assignment12.css">
+  </head>
+
+<!---   
+      I am including a description of my design because I am really proud of it and want to make sure y'all know how it works.
+      Essentially I designed a minefield where as long as your cursor stays on the red blocks you can navigate to the numbers.
+      If you stray off the red blocks it resets the code.
+      The design also is built with a flexible window interface, so adjusting the size of the screen changes the orientation of the blocks.
+      There are puzzles within the design where you must figure out how to size the window in order to create certain paths to certain blocks.
+      Screen zoom must be set to 100% for it to to work.
+-->
+
+
+  <body>
+    <section>
+        <div>
+            <p> Please set your screen's zoom to 100% </p>
+            <p>Please enter your phone number. </p>
+            <p class="output"> </p>
+        </div>
+        <form>
+            <input class="reset-button" type="button" name="reset-button" value="Reset">
+        </form>
+    </section>
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <label class="first-section">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="second-section">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="a">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="b">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="c">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="two-button" type="button" name="two-button" value="2">
+        <label class="d">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="one-button" type="button" name="one-button" value="1">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="e">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="f">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="g">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="h">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="i">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="j">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="k">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="l">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="m">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="zero-button" type="button" name="zero-button" value="0">
+        <label class="n">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="o">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="p">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="q">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="r">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="s">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="t">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="u">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="v">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="w">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="x">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="y">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="z">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="ab">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="ac">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="ad">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="ae">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="af">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="ag">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="eight-button" type="button" name="eight-button" value="8">
+        <label class="ah">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="ai">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="aj">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="ak">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="al">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="am">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="an">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="ao">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="ap">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="aq">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="ar">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="as">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="six-button" type="button" name="six-button" value="6">
+        <label class="at">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="au">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="av">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="aw">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="ax">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="ay">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="az">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="ba">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="bb">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="bc">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="bd">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="be">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="bf">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="five-button" type="button" name="five-button" value="5">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="bg">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="bh">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="bi">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="bj">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="bk">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="bl">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="bm">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;"name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;"name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" button style = "background-color: red;" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="bn">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="bo">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="bp">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="three-button" type="button" name="three-button" value="3">
+        <label class="bq">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="br">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="bs">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="bt">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="bu">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="bv">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="bw">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="bx">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="seven-button" type="button" name="seven-button" value="7">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="by">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="bz">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="ca">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="cb">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="cc">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="cd">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="cd">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="ce">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="cf">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="cg">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="ch">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="ci">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="cj">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="ck">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="cl">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="submit-button" type="button" name="submit-button" value="Submit">
+        <label class="cm">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="cn">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="co">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="cp">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="nine-button" type="button" name="nine-button" value="9">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="cq">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="four-button" type="button" name="four-button" value="4">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="cr">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="cs">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="ct">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="cu">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="cv">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="cw">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="cx">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="cy">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="cz">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="da">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="db">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="dc">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="dd">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="de">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="df">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="dg">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="dh">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="di">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;"name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <input class="null-button" type="button" button style = "background-color: red;" name = "null-button" value=" ">
+        <label class="dj">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        <input class="null-button" type="button" name = "null-button" value=" ">
+        </label>
+    <canvas></canvas>
+
+    <script src="/Assignments/Assignment12/ass12.js"></script>
+  </body>
+</html>
