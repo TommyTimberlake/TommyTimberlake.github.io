@@ -95,6 +95,14 @@ a:hover {
     height:30em;
 }
 
+.photo-img {
+    width: 80%;
+}
+
+.Lucas-img {
+    width: 30%;
+}
+
 .poster {
     height: 20em;
 }
@@ -106,8 +114,6 @@ a:hover {
 
 .intro-vid {
     width: 100%;
-    border-bottom: 3px solid black;
-    padding-bottom: 3em;
     text-align: center;
 }
 
@@ -181,7 +187,7 @@ nav {
 
     .body-content {
         display: flex;
-        gap:1em;
+        gap: 1em;
         flex-direction: column;
     }
     
@@ -238,4 +244,16 @@ nav {
         grid-template-columns: 1fr 1fr;
     }
     
+    .photo-grid {
+        display: inline-grid;
+        gap: 1px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .portrait-photos {
+        display: flex;
+        flex-direction: row;
+        gap: 1px;
+
+    }
 }
